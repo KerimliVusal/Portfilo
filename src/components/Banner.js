@@ -50,17 +50,17 @@ export const Banner = () => {
       setIndex(prevIndex => prevIndex + 1);
     }
   }
-
+  const saveFile = () => {
+    console.log('cv downloaded')
+    ;}
 
   return (
     <section className="banner" id="home">
       <div>
       <Container>
         <Row className="aligh-items-center">
-          <Col xs={12} md={6} xl={7}>
-            <TrackVisibility>
-            {({ isVisible }) =>
-              <div className={isVisible ? "": ""} >
+          <Col xs={12} md={6} lg={7}>
+              <div >
                 <span className="tagline" data-aos="fade-down" data-aos-duration="2000">About Me</span>
                 <h1 id="intr" data-aos="fade-down-right" data-aos-duration="3000"> <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
                   <p data-aos="fade-down-right" data-aos-duration="3000">HI I'm <span id="nma"> Vusal Kerimli</span> a Front-End Developer located in Baku. 
@@ -68,18 +68,20 @@ export const Banner = () => {
        effects and creating intuitive, dynamic user experiences. I will help you make creative and memorable web applications.
         I am interested in working on ambitious projects with positive people. 
         If you have any request or question, don’t hesitate to use the form or send me an email. 
-        <button id="cv" onClick={() => console.log('connect')} data-aos="fade-down" data-aos-duration="2000">Download CV < FileEarmarkPlus size={25}/></button>
+        <button id="cv"  data-aos="fade-down" data-aos-duration="2000">  <a  href="/vusal.pdf" download = "vusal's cv">Download Cv < FileEarmarkPlus size={25}/></a>
+        
+        </button>
         </p>
-         </div>}
-            </TrackVisibility>
+         </div>
+        
           </Col>
-           <Col xs={12} md={6} xl={5}>
-           <TrackVisibility>
-              {({ isVisible }) =>
-                <div className={isVisible ? "" : ""}  data-aos="fade-down-left" data-aos-duration="3000">
+           <Col xs={12} md={6} sm={12} lg={5}>
+          
+             
+                <div  data-aos="fade-down-left" data-aos-duration="3000">
                   <img className="vusal" src={vusa} alt="Header Img"/>
-                </div>} 
-                 </TrackVisibility>
+                </div>
+              
             </Col>
         </Row>
       </Container>

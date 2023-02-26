@@ -11,6 +11,7 @@ import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import { Particle } from './components/Particle';
 import {useEffect,useState} from 'react';
+import Load from './components/load';
 
 
  function App({ type, color}) {
@@ -20,7 +21,7 @@ import {useEffect,useState} from 'react';
      setTimeout(()=>
      {
       setLoa(false)
-     },2000)
+     },5000)
        
       
   },[])
@@ -29,7 +30,8 @@ import {useEffect,useState} from 'react';
         
         {loa? 
         <div className="loader">
-        <ReactLoading type={'spinningBubbles'} color={'green'} height={100} width={100}  />
+         <Load />
+        {/* <ReactLoading type={'spinningBubbles'} color={'green'} height={100} width={100}  /> */}
         </div>
          : 
          <>

@@ -7,6 +7,9 @@ import React from "../assets/img/React.png";
 import jquery from "../assets/img/jquery.png";
 import sass from "../assets/img/sass.png";
 import css from "../assets/img/css.png";
+import nodejs from '../assets/img/nodej.png'
+import nextjs from '../assets/img/next.png'
+import mongodb from '../assets/img/mongo.webp'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import colorSharp from "../assets/img/color-sharp.png"
@@ -20,7 +23,7 @@ export const Skills = () => {
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3
+      items: 6
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -39,7 +42,7 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2 className="sli" data-aos="zoom-in" data-aos-duration="2000">Skills</h2>               
-                       <Carousel  responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider" autoPlay={true} centerMode={true} arrows={false}>
+                       <Carousel  responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider" autoPlay={true} autoPlaySpeed={1300} arrows={false}>
                             <div className="item" data-aos="zoom-out-right" data-aos-duration="2000">
                                 <img src={bootstrap} alt="Image" />
                                 <h5>Bootstrap</h5>
@@ -53,8 +56,8 @@ export const Skills = () => {
                                 <h5>Html</h5>
                             </div>
                             <div className="item" data-aos="zoom-out-right"  data-aos-duration="2000">
-                                <img src={figma} alt="Image" />
-                                <h5>Figma</h5>
+                                <img src={nodejs} alt="Image"/>
+                                <h5>Nodejs</h5>
                             </div>
                             <div className="item " data-aos="zoom-out-left"  data-aos-duration="2000">
                                 <img src={javascript}/>
@@ -66,8 +69,8 @@ export const Skills = () => {
                             </div>
                             
                             <div className="item" data-aos="zoom-out-left" data-aos-duration="2000">
-                                <img src={redux}/>
-                                <h5>Redux</h5>
+                                <img src={nextjs}/>
+                                <h5>Nextjs</h5>
                             </div>
                             <div className="item" data-aos="zoom-out-left" data-aos-duration="2000">
                                 <img src={jquery}/>

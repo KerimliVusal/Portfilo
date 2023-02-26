@@ -52,7 +52,7 @@ export const Particle = () => {
                     links: {
                         color: "#fff",
                         distance: 200,
-                        enable: true,
+                        enable: false,
                         opacity: 0.2,
                         width: 1,
                     },
